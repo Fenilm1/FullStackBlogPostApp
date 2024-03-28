@@ -1,4 +1,5 @@
 global.loggedIn = null
+const PORT = process.env.PORT;
 //Module
 const express = require('express')
 const ejs = require('ejs')
@@ -123,6 +124,6 @@ app.get('/post',(req,res)=>{
 */
 
 //
-app.listen(4000, () => {
-    console.log(`Appliaction Link : http://localhost:4000/`)
+app.listen(PORT, () => {
+    console.log(`Application Running on ${PORT}`)
 })
